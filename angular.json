@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-project": {
+    "angular-amcharts-map-demo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-project",
+            "outputPath": "dist/angular-amcharts-map-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": [],
             "es5BrowserSupport": true
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-project:build"
+            "browserTarget": "angular-amcharts-map-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-project:build:production"
+              "browserTarget": "angular-amcharts-map-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-project:build"
+            "browserTarget": "angular-amcharts-map-demo:build"
           }
         },
         "test": {
@@ -84,7 +84,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -107,7 +107,7 @@
         }
       }
     },
-    "my-project-e2e": {
+    "angular-amcharts-map-demo-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -116,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "my-project:serve"
+            "devServerTarget": "angular-amcharts-map-demo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "my-project:serve:production"
+              "devServerTarget": "angular-amcharts-map-demo:serve:production"
             }
           }
         },
@@ -136,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "my-project"
+  "defaultProject": "angular-amcharts-map-demo"
 }
